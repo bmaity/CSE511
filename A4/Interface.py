@@ -10,7 +10,6 @@ import sys
 
 
 def RangeQuery(ratingsTableName, ratingMinValue, ratingMaxValue, openconnection):
-    print("---RangeQuery")
     cur = openconnection.cursor()
     of = 'RangeQueryOut.txt'
     rmt = 'rangeratingsmetadata'
@@ -37,11 +36,11 @@ def RangeQuery(ratingsTableName, ratingMinValue, ratingMaxValue, openconnection)
         if ratingMaxValue >= min and ratingMinValue <= max:
             rangeCmd = "SELECT * FROM rangeratingspart%s WHERE rating >= %s and rating <= %s" % (str(i), ratingMinValue, ratingMaxValue)
             cur.execute(rangeCmd)
-            results = cur.fetchall()
+            rangeresults = cur.fetchall()
 
             # write to file
             with open(of, 'a') as f:
-                for r in results:
+                for r in rangeresults:
                     f.write("RangeRatingsPart%s,%s,%s,%s\n" % (i, r[0], r[1], r[2]))
 
     command = "SELECT partitionnum FROM %s" % (rrmt)
@@ -51,16 +50,15 @@ def RangeQuery(ratingsTableName, ratingMinValue, ratingMaxValue, openconnection)
     for j in range(0, robinRange):
         cmd = "SELECT * FROM roundrobinratingspart%s WHERE rating >= %s AND rating <= %s" % (str(j), ratingMinValue, ratingMaxValue)
         cur.execute(cmd)
-        results = cur.fetchall()
+        robinresults = cur.fetchall()
 
         # write to file
         with open(of, 'a') as f:
-            for r in results:
-                f.write("RoundRobinRatingsPart%s,%s,%s,%s\n" % (i, r[0], r[1], r[2]))
+            for r in robinresults:
+                f.write("RoundRobinRatingsPart%s,%s,%s,%s\n" % (j, r[0], r[1], r[2]))
 
 
 def PointQuery(ratingsTableName, ratingValue, openconnection):
-    print("---PointQuery")
     cur = openconnection.cursor()
     of = 'PointQueryOut.txt'
     rmt = 'rangeratingsmetadata'
@@ -87,11 +85,11 @@ def PointQuery(ratingsTableName, ratingValue, openconnection):
         if ratingValue >= min and ratingValue <= max:
             rangeCmd = "SELECT * FROM rangeratingspart%s WHERE rating = %s" % (str(i), ratingValue)
             cur.execute(rangeCmd)
-            results = cur.fetchall()
+            prangeresults = cur.fetchall()
 
             # write to file
             with open(of, 'a') as f:
-                for r in results:
+                for r in prangeresults:
                     f.write("RangeRatingsPart%s,%s,%s,%s\n" % (i, r[0], r[1], r[2]))
 
     command = "SELECT partitionnum FROM %s" % (rrmt)
@@ -101,12 +99,12 @@ def PointQuery(ratingsTableName, ratingValue, openconnection):
     for j in range(0, robinRange):
         cmd = "SELECT * FROM roundrobinratingspart%s WHERE rating = %s" % (str(j), ratingValue)
         cur.execute(cmd)
-        results = cur.fetchall()
+        probinresults = cur.fetchall()
 
         # write to file
         with open(of, 'a') as f:
-            for r in results:
-                f.write("RoundRobinRatingsPart%s,%s,%s,%s\n" % (i, r[0], r[1], r[2]))
+            for r in probinresults:
+                f.write("RoundRobinRatingsPart%s,%s,%s,%s\n" % (j, r[0], r[1], r[2]))
 
 
 def writeToFile(filename, rows):
