@@ -15,38 +15,43 @@ def ParallelSort (InputTable, SortingColumnName, OutputTable, openconnection):
 
     cur = openconnection.cursor()
 
+    cmd = "SELECT MIN(%s) FROM %s" % (SortingColumnName, InputTable)
+    cur.execute(cmd)
+    min = cur.fetchone()[0]
+
     cmd = "SELECT MAX(%s) FROM %s" % (SortingColumnName, InputTable)
     cur.execute(cmd)
     max = cur.fetchone()[0]
+
+    interval = (max - min)/5
 
     cmd = "DROP TABLE IF EXISTS %s" % OutputTable
     cur.execute(cmd)
     cmd = "CREATE TABLE IF NOT EXISTS %s (LIKE %s)" % (OutputTable, InputTable)
     cur.execute(cmd)
 
-    # loop through 0 to maxpartitions
-    # sort values in the range_part table and insert into a new table output_i
-    # when completed for all range partition tables then insert all the values of output_i tables into OutputTable
-
-    for i in range(0, int(max)):
-        cmd = "DROP TABLE IF EXISTS %s%s" % (OutputTable, str(i))
-        cur.execute(cmd)
-        cmd = "CREATE TABLE IF NOT EXISTS %s%s (LIKE %s)" % (OutputTable, str(i), InputTable)
-        cur.execute(cmd)
-        thread = threading.Thread(target=sortvalues(i, InputTable, SortingColumnName, OutputTable, openconnection))
+    for i in range(0, 5):
+        s = min
+        e = min + interval
+        thread = threading.Thread(target=sortvalues(i, s, e, InputTable, OutputTable, SortingColumnName, openconnection))
         thread.start()
-
-    for i in range(0, int(max)):
-        cmd = "INSERT INTO %s SELECT * FROM %s%s" % (OutputTable, OutputTable, str(i))
-        cur.execute(cmd)
+        thread.join()
+        min = e
 
     openconnection.commit()
 
 
-def sortvalues(i, table, col, output, con):
+def sortvalues(i, min, max, table, output, col, con):
     print("--sort %i" % i)
     cur = con.cursor()
-    cmd = "INSERT INTO %s%s SELECT * FROM %s ORDER BY %s" % (output, str(i), table, col)
+
+    if i == 0:
+        cmd = "CREATE TABLE IF NOT EXISTS %s (LIKE %s)" % (output, table)
+        cur.execute(cmd)
+        cmd = "INSERT INTO %s SELECT * FROM %s WHERE %s >= %s AND %s <= %s ORDER BY %s" % (output, table, col, str(min), col, str(max), col)
+    else:
+        cmd = "INSERT INTO %s SELECT * FROM %s WHERE %s > %s AND %s <= %s ORDER BY %s" % (output, table, col, str(min), col, str(max), col)
+
     cur.execute(cmd)
     cur.close()
 
@@ -74,13 +79,13 @@ def ParallelJoin (InputTable1, InputTable2, Table1JoinColumn, Table2JoinColumn, 
 
     interval = (max - min)/5
 
-    cmd = "CREATE TABLE IF NOT EXIST %s AS"
-
     for i in range(0, 5):
         s = min
         e = min + interval
         thread = threading.Thread(target=joinvalues(i, s, e, InputTable1, InputTable2, Table1JoinColumn, Table2JoinColumn, OutputTable, openconnection))
         thread.start()
+        thread.join()
+        min = e
 
     openconnection.commit()
 
