@@ -12,18 +12,12 @@ import threading
 # Donot close the connection inside this file i.e. do not perform openconnection.close()
 def ParallelSort (InputTable, SortingColumnName, OutputTable, openconnection):
     print("---Parallel Sort")
-    maxrating = 5
 
     cur = openconnection.cursor()
-    cmd = "SELECT MIN(%s) FROM %s" % (SortingColumnName, InputTable)
-    cur.execute(cmd)
-    min = cur.fetchone()[0]
 
     cmd = "SELECT MAX(%s) FROM %s" % (SortingColumnName, InputTable)
     cur.execute(cmd)
     max = cur.fetchone()[0]
-
-    interval = abs(max - min) / maxrating
 
     cmd = "DROP TABLE IF EXISTS %s" % OutputTable
     cur.execute(cmd)
@@ -58,9 +52,49 @@ def sortvalues(i, table, col, output, con):
 
 
 def ParallelJoin (InputTable1, InputTable2, Table1JoinColumn, Table2JoinColumn, OutputTable, openconnection):
-    #Implement ParallelJoin Here.
-    pass # Remove this once you are done with implementation
+    print("--Parallel Join")
 
+    cur = openconnection.cursor()
+
+    cmd = "SELECT MIN(%s) FROM %s" % (Table1JoinColumn, InputTable1)
+    cur.execute(cmd)
+    min1 = cur.fetchone()[0]
+    cmd = "SELECT MIN(%s) FROM %s" % (Table2JoinColumn, InputTable2)
+    cur.execute(cmd)
+    min2 = cur.fetchone()[0]
+    min = min1 if min1 < min2 else min2
+
+    cmd = "SELECT MAX(%s) FROM %s" % (Table1JoinColumn, InputTable1)
+    cur.execute(cmd)
+    max1 = cur.fetchone()[0]
+    cmd = "SELECT MAX(%s) FROM %s" % (Table2JoinColumn, InputTable2)
+    cur.execute(cmd)
+    max2 = cur.fetchone()[0]
+    max = max1 if max1 > max2 else max2
+
+    interval = (max - min)/5
+
+    cmd = "CREATE TABLE IF NOT EXIST %s AS"
+
+    for i in range(0, 5):
+        s = min
+        e = min + interval
+        thread = threading.Thread(target=joinvalues(i, s, e, InputTable1, InputTable2, Table1JoinColumn, Table2JoinColumn, OutputTable, openconnection))
+        thread.start()
+
+    openconnection.commit()
+
+
+def joinvalues(i, min, max, table1, table2, col1, col2, output, con):
+    print("--join %i" % i)
+    cur = con.cursor()
+
+    if i == 0:
+        cmd = "CREATE TABLE %s AS SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s > %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min,  table1, col1, max)
+    else:
+        cmd = "INSERT INTO %s SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s >= %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min, table1, col1, max)
+    cur.execute(cmd)
+    cur.close()
 
 ################### DO NOT CHANGE ANYTHING BELOW THIS #############################
 

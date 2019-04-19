@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="797efe13-69da-4c1f-b76c-ea793944b7fc" name="Default Changelist" comment="init A5">
-      <change afterPath="$PROJECT_DIR$/A5/Assignment1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assignments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assignments.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/pg_toast.33HYYw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/dds_assignment.mXKoWA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_temp_1.zkWuFg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7d237954-5f81-4ddb-ae08-61b537a51fd0/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="797efe13-69da-4c1f-b76c-ea793944b7fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A5/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/A5/Interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A5/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/A5/Interface.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,20 +36,20 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
@@ -82,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A5/Interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
+            <state relative-caret-position="352">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#50#65#0" expanded="true" />
               </folding>
@@ -94,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/A5/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="383">
+              <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding>
                 <element signature="e#35#50#0" expanded="true" />
               </folding>
@@ -118,9 +99,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console_1.sql" />
         <option value="$PROJECT_DIR$/A4/Interface.py" />
         <option value="$PROJECT_DIR$/A5/interface.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql" />
-        <option value="$PROJECT_DIR$/A5/tester.py" />
         <option value="$PROJECT_DIR$/A5/Interface.py" />
+        <option value="$PROJECT_DIR$/A5/tester.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql" />
       </list>
     </option>
   </component>
@@ -254,7 +235,7 @@
       <updated>1555550307022</updated>
       <workItem from="1555550309142" duration="1083000" />
       <workItem from="1555553168800" duration="691000" />
-      <workItem from="1555599819817" duration="6058000" />
+      <workItem from="1555599819817" duration="9601000" />
     </task>
     <task id="LOCAL-00001" summary="init&#10;finished a1-a3">
       <created>1555550814117</created>
@@ -270,11 +251,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555599899810</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished parallel sort">
+      <created>1555629533168</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555629533168</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7832000" />
+    <option name="totallyTimeSpent" value="11375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1861" height="1216" extended-state="6" />
@@ -285,17 +273,17 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3299817" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39811322" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924527" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.354717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.19245283" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.19245283" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32924527" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3299817" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299817" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32924527" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32924527" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -333,7 +321,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init&#10;finished a1-a3" />
     <MESSAGE value="init A5" />
-    <option name="LAST_COMMIT_MESSAGE" value="init A5" />
+    <MESSAGE value="finished parallel sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished parallel sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -343,18 +332,13 @@
           <line>99</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/A5/tester.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/assignments$Interface.coverage" NAME="Interface Coverage Results" MODIFIED="1555550621678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A4" />
     <SUITE FILE_PATH="coverage/assignments$tester.coverage" NAME="tester Coverage Results" MODIFIED="1555553722442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A4" />
-    <SUITE FILE_PATH="coverage/assignments$tester__1_.coverage" NAME="A5_tester Coverage Results" MODIFIED="1555629201966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A5" />
+    <SUITE FILE_PATH="coverage/assignments$tester__1_.coverage" NAME="A5_tester Coverage Results" MODIFIED="1555633060078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/A3/Interface.py">
@@ -384,29 +368,41 @@
     <entry file="file://$PROJECT_DIR$/A5/Assignment1.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://7d237954-5f81-4ddb-ae08-61b537a51fd0/database/dds_assignment/schema/public/table/movies">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/A5/tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="e#35#50#0" expanded="true" />
-          </folding>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/A5/Interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
+        <state relative-caret-position="352">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="e#50#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A5/tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+          <folding>
+            <element signature="e#35#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
