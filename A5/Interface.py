@@ -95,9 +95,9 @@ def joinvalues(i, min, max, table1, table2, col1, col2, output, con):
     cur = con.cursor()
 
     if i == 0:
-        cmd = "CREATE TABLE %s AS SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s > %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min,  table1, col1, max)
+        cmd = "CREATE TABLE %s AS SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s >= %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min,  table1, col1, max)
     else:
-        cmd = "INSERT INTO %s SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s >= %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min, table1, col1, max)
+        cmd = "INSERT INTO %s SELECT * FROM %s INNER JOIN %s ON %s.%s = %s.%s WHERE %s.%s > %s AND %s.%s <= %s" % (output, table1, table2, table1, col1, table2, col2, table1, col1, min, table1, col1, max)
     cur.execute(cmd)
     cur.close()
 

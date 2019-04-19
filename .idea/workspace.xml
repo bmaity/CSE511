@@ -36,20 +36,20 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="dds_assignment: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
@@ -63,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/A5/Interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="663">
+              <caret line="99" column="91" lean-forward="true" selection-start-line="99" selection-start-column="91" selection-end-line="99" selection-end-column="91" />
               <folding>
                 <element signature="e#50#65#0" expanded="true" />
               </folding>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/A5/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="50" column="130" lean-forward="true" selection-start-line="50" selection-start-column="130" selection-end-line="50" selection-end-column="130" />
               <folding>
                 <element signature="e#35#50#0" expanded="true" />
               </folding>
@@ -99,9 +99,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console_1.sql" />
         <option value="$PROJECT_DIR$/A4/Interface.py" />
         <option value="$PROJECT_DIR$/A5/interface.py" />
-        <option value="$PROJECT_DIR$/A5/Interface.py" />
-        <option value="$PROJECT_DIR$/A5/tester.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql" />
+        <option value="$PROJECT_DIR$/A5/tester.py" />
+        <option value="$PROJECT_DIR$/A5/Interface.py" />
       </list>
     </option>
   </component>
@@ -235,7 +235,7 @@
       <updated>1555550307022</updated>
       <workItem from="1555550309142" duration="1083000" />
       <workItem from="1555553168800" duration="691000" />
-      <workItem from="1555599819817" duration="9601000" />
+      <workItem from="1555599819817" duration="11233000" />
     </task>
     <task id="LOCAL-00001" summary="init&#10;finished a1-a3">
       <created>1555550814117</created>
@@ -258,11 +258,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555629533168</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finished parallel join">
+      <created>1555633087323</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555633087324</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed a5">
+      <created>1555634515940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555634515940</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11375000" />
+    <option name="totallyTimeSpent" value="13007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-8" width="1861" height="1216" extended-state="6" />
@@ -273,13 +287,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924527" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32924527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.354717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.19245283" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.19245283" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32924527" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3299817" />
@@ -322,7 +336,9 @@
     <MESSAGE value="init&#10;finished a1-a3" />
     <MESSAGE value="init A5" />
     <MESSAGE value="finished parallel sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished parallel sort" />
+    <MESSAGE value="finished parallel join" />
+    <MESSAGE value="fixed a5" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,7 +354,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/assignments$Interface.coverage" NAME="Interface Coverage Results" MODIFIED="1555550621678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A4" />
     <SUITE FILE_PATH="coverage/assignments$tester.coverage" NAME="tester Coverage Results" MODIFIED="1555553722442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A4" />
-    <SUITE FILE_PATH="coverage/assignments$tester__1_.coverage" NAME="A5_tester Coverage Results" MODIFIED="1555633060078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A5" />
+    <SUITE FILE_PATH="coverage/assignments$tester__1_.coverage" NAME="A5_tester Coverage Results" MODIFIED="1555634456924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/A5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/A3/Interface.py">
@@ -380,29 +396,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/A5/Interface.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#50#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7d237954-5f81-4ddb-ae08-61b537a51fd0/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://7d237954-5f81-4ddb-ae08-61b537a51fd0/database/dds_assignment/schema/public/table/paralleljoinoutputtable">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true">
+            <filter text="" />
+          </filtering>
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/A5/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="50" column="130" lean-forward="true" selection-start-line="50" selection-start-column="130" selection-end-line="50" selection-end-column="130" />
           <folding>
             <element signature="e#35#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/A5/Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="99" column="91" lean-forward="true" selection-start-line="99" selection-start-column="91" selection-end-line="99" selection-end-column="91" />
+          <folding>
+            <element signature="e#50#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
